@@ -21,6 +21,8 @@ Make sure your bitcoind:
 - Is up and running and it's API port accessible from your network
 - Is warmed up. When you just start the daemon, you need to wait a few minutes before API port becomes reachable
 
+### Just so you know...
+
 There is no way for checking whether syncing is done, simply because it isn't known.
 
 Technically a client is always syncing: there is no real difference between "having all blocks" and "not having all blocks" - it always has all blocks that it knows about, and doesn't know whether there are blocks which it misses.
