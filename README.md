@@ -13,6 +13,14 @@ Make sure [bitcoin-cli](https://bitcoin.org/en/download) is installed and config
 
 ## FYI
 
+If you see following error:
+```
+Looks like configuration of bitcoin-cli is wrong or bitcoind is down or warming up. Fix it first
+```
+Make sure your bitcoind:
+- Is up and running and it's API port accessible from your network
+- Is warmed up. When you just start the daemon, you need to wait a few minutes before API port becomes reachable
+
 There is no way for checking whether syncing is done, simply because it isn't known.
 
 Technically a client is always syncing: there is no real difference between "having all blocks" and "not having all blocks" - it always has all blocks that it knows about, and doesn't know whether there are blocks which it misses.
